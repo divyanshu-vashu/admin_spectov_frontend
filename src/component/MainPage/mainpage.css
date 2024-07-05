@@ -1,0 +1,140 @@
+.select-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+}
+
+.course-select,
+.day-select {
+    width: 90%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: border-color 0.3s;
+    margin: 15px;
+    text-align: center;
+}
+
+.course-select:focus,
+.day-select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video-link-input,
+.material-link-input {
+    width: 85%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    text-align: center;
+    transition: border-color 0.3s;
+    margin-left: 15px;
+}
+
+.video-link-input:focus,
+.material-link-input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+#btn {
+    width: 90%;
+    margin-left: 15px;
+    height: 2.25rem;
+    border: none;
+    background-color: rgb(249, 99, 58);
+    color: white;
+    cursor: pointer;
+}
+
+#btn:hover,#nBtn:hover {
+    background-color: rgb(176, 100, 79);
+}
+#nBtn{
+    width: 100%;
+    height: 2.25rem;
+    border: none;
+    background-color: rgb(249, 99, 58);
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+}
+
+#nDiv{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:end;
+    justify-content:space-evenly;
+}
+
+@media (max-width: 768px) {
+    .select-container,
+    .input-container {
+        width: 100%;
+    }
+    #nBtn{
+        width: 80%;
+    }
+
+
+    .course-select,
+    .day-select,
+    .video-link-input,
+    .material-link-input,
+    #btn {
+        width: calc(100% - 30px);
+        margin-left: 15px;
+    }
+    #nDiv{
+        display: flex;
+        flex-wrap: wrap;
+        align-items:center;
+        justify-content:center;
+    }
+}
+
+@media (max-width: 480px) {
+    #nBtn{
+        width: 70%;
+    }
+    #nDiv{
+        display: flex;
+        flex-wrap: wrap;
+        align-items:center;
+        justify-content:center;
+    }
+    .select-container,
+    .input-container {
+        width: 100%;
+    }
+
+    .course-select,
+    .day-select,
+    .video-link-input,
+    .material-link-input,
+    #btn {
+        width: calc(100% - 20px);
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    #btn {
+        height: 2rem;
+    }
+}
