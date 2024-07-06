@@ -15,7 +15,7 @@ const Addnewcourse=()=>{
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const url = "http://localhost:4000/api/courses";
+      const url = "https://admin-spectov-backend.onrender.com/api/courses";
       const { data: res } = await axios.post(url, data);
       alert("New Course Added")
       window.location.reload();
