@@ -11,7 +11,7 @@ const Update = () => {
 
   const fetchUsers = async () => {
     try {
-      const response = await axios.get('http://localhost:4000/api/all');
+      const response = await axios.get('https://admin-spectov-backend.onrender.com/api/all');
       setCourses(response.data);
       setLoading(false);
     } catch (err) {
