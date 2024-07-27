@@ -23,7 +23,7 @@ const Update = () => {
     e.preventDefault();
     try {
       await axios.put(`https://admin-spectov-backend.onrender.com/api/delete/${courses[course]?.courseName}/${day}`);
-      alert('Day = `${day}` course deleted');
+      alert('Deleted Succesfully.');
       window.location.reload();
     } catch (error) {
       console.log(error);
