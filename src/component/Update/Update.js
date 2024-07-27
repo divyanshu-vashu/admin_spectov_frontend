@@ -22,7 +22,7 @@ const Update = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.put(`http://localhost:4000/api/delete/${courses[course]?.courseName}/${day}`);
+      await axios.put(`https://admin-spectov-backend.onrender.com/api/delete/${courses[course]?.courseName}/${day}`);
       alert('Day = `${day}` course deleted');
       window.location.reload();
     } catch (error) {
