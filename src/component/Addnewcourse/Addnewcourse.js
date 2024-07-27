@@ -48,6 +48,7 @@ const Addnewcourse=()=>{
               onChange={handleChange}
               value={data.courseName} required/>
             <button id='btn'>Add</button>
+            <h2>{error}</h2>
         </form>
            
         </>
