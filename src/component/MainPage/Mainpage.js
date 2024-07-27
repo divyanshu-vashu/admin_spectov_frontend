@@ -48,7 +48,7 @@ const Mainpage = () => {
     try {
       console.log(data)
 
-      const url=`http://localhost:4000/api/add`;
+      const url=`https://admin-spectov-backend.onrender.com/api/add`;
       const { data: res } = await axios.put(url, data);
 
       console.log(res.message)
